@@ -7,7 +7,7 @@ import { DefaultLayout } from './components/Layouts';
 function App() {
     return (
         <Router>
-            <div className="App">
+            <Fragment>
                 <Routes>
                     {publicRouter.map((route, index) => {
                         const Page = route.component;
@@ -32,7 +32,7 @@ function App() {
                         );
                     })}
                 </Routes>
-            </div>
+            </Fragment>
         </Router>
     );
 }
